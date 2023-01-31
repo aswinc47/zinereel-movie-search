@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZineReel</title>
+    <link rel="shortcut icon" href="./images/tv.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Nav-bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center " href="#">
+            <img src="./images/tv.png" alt="logo" width="40" height="40" class="align-text-top me-2 logo">
+            <h3 class="logotitle">Zine<span id="reel">Reel</span></h3>
+          </a>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Search -->
+    <section class="container d-flex justify-content-center search">
+        <div class="input-group align-items-center">
+            <input type="text"class="form-control w-50" id="moviesearch" placeholder="Search movie"/>
+            <button type="button"onclick="displayData()" class="btn signup-btn px-4 py-2 mx-2">
+              Search
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Search -->
+    <section class="container d-flex justify-content-center result">
+        <div class="row" >
+            <div class="col-md-3" id="movieimg">
+
+            </div>
+            <div class="col-md-9 details">
+                <h1 id="titleid">Fight Club</h1>
+                <div class="d-flex subdetails"><h5 class="me-3">Year : <span id="yearid">1999</span> </h5><h5 class="me-3 rated">Rating : <span id="ratedid">R</span></h5><h5 class="me-3">Released : <span id="releasedid">15 Oct 1999</span></h5></div>
+                <h5>Genre: <span id="genreid">Drama</span></h5>
+                <h5>Director : <span id="directorid">David Fincher</span></h5>
+                <h5>Actors : <span id="actorsid"></span>Brad Pitt, Edward Norton, Meat Loaf</h5>
+                <p>Plot: <span id="plotid"></span>An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.</p>
+                <h5>Language:<span id="languageid">English</span></h5>
+                <h6><span id="awardsid">Nominated for 1 Oscar. 11 wins & 38 nominations total</span></h6>
+                <h5>imdb Rating : <span id="imdbid">8.8</span></h5>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="./script.js"></script>
+</html>

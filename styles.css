@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+body{
+    background: rgb(36,55,99);
+    font-family: 'Poppins';
+    background: linear-gradient(6deg, rgba(36,55,99,1) 0%, rgba(9,9,121,1) 35%, rgba(255,110,49,1) 100%);
+    height: 100vh;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width: 600px){
+    body{
+        height: auto;
+    }
+    body .navbar{
+        padding: 0px;
+    }
+    .navbar .container-fluid{
+        justify-content: center;
+    }
+    .navbar-brand h3{
+        margin-left: 5px;
+    }
+    body .search{
+        padding-top: 0px;
+        width: 100%;
+        padding-inline: 15px;
+    }
+    .input-group .form-control{
+        font-size: 1rem;
+    }
+    .input-group .signup-btn{
+        font-size: 1rem;
+    }
+    body .result{
+        height: auto;
+        padding-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    .result .row{
+        width: 90%;
+    }
+    #movieimg{
+        height: 30rem;
+    }
+    .result .details{
+        padding: 20px;
+    }
+    #titleid{
+        margin-bottom: 1rem;
+    }
+    .details .subdetails{
+        flex-direction: column;
+    }
+    .subdetails .rated{
+        display: none;
+    }
+}
+
+.row{
+    border-radius: 20px;
+    height:max-content;
+    background-color: #ff6f3177;
+    width: 75%;
+}
+.navbar{
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 10rem;
+    padding-block: 2rem;
+}
+
+.logotitle{
+    margin: 0px;
+    margin-left: 1rem;
+    color: #F5F5F5;
+    font-weight: 300;
+}
+.logotitle span{
+    font-weight: 600;
+}
+
+
+.search{
+    /* height: 10vh; */
+    padding-top: 1rem;
+    width: 50%;
+}
+.form-control{
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 0px;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.form-control:focus{
+    color: white;
+    background-color: rgba(0, 255, 255, 0);
+    outline: none !important;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0);
+    border-width: 0px 0px 2px 0px;
+    border-bottom: solid beige 2px;
+    transition: 700ms;
+}
+
+.form-control::placeholder{
+    color: white;
+}
+.signup-btn{
+    color: white;
+    background-color: #243763;
+    font-weight: 600;
+    border-radius: 0px;
+}
+
+
+
+.signup-btn:hover{
+    color: black;
+    background-color: white;
+    transition: 700ms;
+}
+
+.bg-black{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 100%;
+}
+.details{
+    color: #F5F5F5;
+    padding-inline: 3rem;
+    padding-block: 1.2rem;
+}
+.details h1{
+    font-size: 2rem;
+}
+.details h5{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.details span{
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 0.5rem;
+}
+
+.details p{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+#awardsid{
+    font-style: italic;
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding-left: 0px;
+}
+.details h6{
+    margin-bottom: 1rem;
+}
+
+#imdbid{
+    padding: 0.4rem;
+    border-radius: 20px;
+    background-color: rgb(218, 113, 9);
+}
+
+#movieimg{
+    background-image: url("https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius : 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.result{
+    height: 80vh;
+    padding-top: 5rem;
+}
+.rated{
+    background-color: rgb(218, 113, 9);
+    padding-inline: 0.4rem;
+    border-radius: 5px;
+    padding-top: 0.15rem;
+}
+
+#ratedid{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
